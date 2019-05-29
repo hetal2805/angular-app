@@ -1,0 +1,7 @@
+<button (click)="showData()">Click me to get the Data</button>
+
+<ul *ngFor = "let user of users$">
+  <li appHighlight>{{user.id}}</li>
+  <li appHighlight>{{user.title}}</li>
+  <li appHighlight>{{user.body}}</li>
+</ul>

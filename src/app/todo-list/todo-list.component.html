@@ -1,0 +1,7 @@
+Enter Item here<input type="text" #item>
+<button (click) = "addNewItem(item.value); item.value=''">Add an item</button>
+
+<ul  *ngFor = "let item of items">
+  <li>{{item | uppercase}}
+  </li>
+</ul>
